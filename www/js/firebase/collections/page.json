@@ -1,0 +1,11 @@
+{
+	"page" : {
+		"nama" : "Halaman 1",
+		"url" : "halaman-1",
+		"isi" : "isi halaman 1",
+		"created_at" : "7 November 2016 13:37",
+		"updated_at" : "7 November 2016 13:37",
+		"created_by" : "7 November 2016 13:37",
+		"page_cat_id" : "1" 
+	}
+}

@@ -1,0 +1,23 @@
+
+<ion-view view-title="Register">
+    <ion-content class="im-wrapper">
+        <form name="form_signup" ng-submit="doRegister(userRegister)" novalidate>
+            <div class="list card padding">
+                <label for="Name" class="item item-input">
+                    <input type="text" ng-model="$parent.userRegister.name" id="user_name" placeholder="Full Name" required>
+                    <span class="" ng-show="myForm.myName.$touched && myForm.myName.$invalid">The name is required.</span>
+                </label>
+                <label for="Email" class="item item-input">
+                    <input type="email" ng-model="$parent.userRegister.email" id="user_email" placeholder="Email" required>
+                </label>
+                <label for="Password" class="item item-input">
+                    <input type="password" ng-model="$parent.userRegister.password" id="user_pass" placeholder="Password" required>
+                </label>
+                <label for="Repeat Password" class="item item-input">
+                    <input type="password" ng-model="$parent.userRegister.repeat_password" id="user_repeatpass" placeholder="Repeat Password" required>
+                </label>
+                <button type="submit" class="button button-block button-positive activated">Register</button>
+            </div>
+        </form>
+    </ion-content>
+</ion-view>

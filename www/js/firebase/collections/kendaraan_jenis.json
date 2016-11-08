@@ -1,0 +1,13 @@
+{
+	"kendaraan_jenis" : [
+		{
+			"nama" : "Mobil"
+		},
+		{
+			"nama" : "Motor"
+		},
+		{
+			"nama" : "Taxi"
+		}
+	]
+}

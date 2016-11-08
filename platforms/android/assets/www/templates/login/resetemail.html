@@ -1,0 +1,16 @@
+<ion-view view-title="Reset Email">
+    <ion-content class="im-wrapper">
+    <div class="list card padding">
+        <form name="form_reset" ng-submit="doResetemail(userReset)" novalidate>
+              <label class="item item-input item-floating-label">
+                <span class="input-label">Email</span>
+                <input type="text" ng-model="$parent.userReset.email" id="remail" placeholder="Email">
+              </label>
+
+            <div class="padding">
+                <button type="submit" class="button button-block button-calm">Reset</button>
+            </div>
+         </form>
+    </div>
+    </ion-content>
+</ion-view>

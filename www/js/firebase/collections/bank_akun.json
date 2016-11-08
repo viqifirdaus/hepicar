@@ -1,0 +1,9 @@
+{
+	"bank_akun" : {
+		"m_negara_id" : "1", // foreign key
+		"nama_pemilik" : "Viqi Firdaus",
+		"nama_bank" : "Bank Mandiri",
+		"kode_bank" : "014",
+		"no_rekening" : "1234567890"
+	}
+}

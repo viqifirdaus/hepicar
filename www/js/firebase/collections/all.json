@@ -1,0 +1,225 @@
+{
+	"alasan_batal": [{
+		"nama": "Alasan ke 1"
+	}, {
+		"nama": "Alasan ke 2"
+	}, {
+		"nama": "Alasan ke 3"
+	}],
+	"bank_akun": [{
+		"m_negara_id": "1",
+		"nama_pemilik": "Viqi Firdaus",
+		"nama_bank": "Bank Mandiri",
+		"kode_bank": "014",
+		"no_rekening": "1234567890"
+	}],
+	"bank_nama": [{
+		"nama": "Bank Mandiri"
+	}, {
+		"nama": "Bank BRI"
+	}, {
+		"nama": "Bank BCA"
+	}],
+	"booking": [{
+		"booking_code": "book01",
+		"offer_id": "1",
+		"seeker_id": "1",
+		"created_at": "8 Nov 2016 08:49",
+		"status": "Pending",
+		"stopovers_id": "1",
+		"feedback": "Belum ada feedback",
+		"rating": "6",
+		"feedback_date": "7 November 2016 14:13",
+		"seat_count": "1",
+		"alasan_batal_id": "1",
+		"is_bayar": "Yes"
+	}],
+	"booking_seeker_member": [{
+		"nama": "1111",
+		"usia": "21",
+		"jenis_kelamin": "Laki-laki",
+		"booking_id": "1"
+	}],
+	"kendaraan": [{
+		"kendaraan_model_id": "1",
+		"kenyamanan": "Luxury",
+		"jumlah_kursi": "6",
+		"warna": "merah",
+		"m_warna_id": "1",
+		"kendaraan_tipe_id": "1",
+		"kendaraan_jenis_id": "1"
+	}],
+	"kendaraan_jenis": [{
+		"nama": "Mobil"
+	}, {
+		"nama": "Motor"
+	}, {
+		"nama": "Taxi"
+	}],
+	"kendaraan_merk": [{
+		"nama": "Ferrari"
+	}],
+	"kendaraan_model": [{
+		"nama": "Ferrari tahun 2015",
+		"mobil_merk_id": "1"
+	}],
+	"kendaraan_tipe": [{
+		"nama": "tipe 1"
+	}],
+	"m_hari": [{
+		"nama": "Senin"
+	}, {
+		"nama": "Selasa"
+	}, {
+		"nama": "Rabu"
+	}, {
+		"nama": "Kamis"
+	}, {
+		"nama": "Jum'at"
+	}, {
+		"nama": "Sabtu"
+	}, {
+		"nama": "Minggu"
+	}],
+	"m_kecamatan": [{
+		"nama": "Duduksampeyan",
+		"kota_id": "1"
+	}],
+	"m_kode_pos": [{
+		"kode": "61162",
+		"kecamatan_id": "1"
+	}],
+	"m_kota": [{
+		"nama": "Surabaya",
+		"provinsi_id": "1"
+	}],
+	"m_negara": [{
+		"nama": "Indonesia",
+		"kode_telepon": "+62",
+		"sample_placeholder": "08XX-XXXX-XXXX",
+		"id_deleted": "No"
+	}],
+	"m_preferensi": [{
+		"nama": "preferensi_1"
+	}],
+	"m_provinsi": [{
+		"nama": "Jawa Timur",
+		"negara_id": "1"
+	}],
+	"m_warna": [{
+		"nama": "merah"
+	}],
+	"message": [{
+		"pesan": "Hallo",
+		"created_at": "7 November 2016 13:46",
+		"user_sender_id": "1",
+		"user_receiver_id": "1",
+		"is_deleted": "No"
+	}],
+	"offer": [{
+		"is_often": "Sering",
+		"pickup_lat": "-2.428624",
+		"pickup_log": "25.114746",
+		"dropoff_lat": "-2.428624",
+		"dropoff_log": "25.114746",
+		"date_time_travel": "7 November 2016 13:45",
+		"date_time_return": "7 November 2016 13:45",
+		"user_id": "1",
+		"cost_per_pessenger": "30000",
+		"seat_offer": "offer",
+		"kendaraan_id": "1",
+		"offer_detail_pickup": "offer offer_detail_pickup",
+		"offer_detail_return": " offer offer_detail_return",
+		"ukuran_barang_bawaan_id": "1",
+		"pickup_flexibility_id": "1",
+		"posible_detour_id": "1"
+	}],
+	"often_offer": [{
+		"offer_id": "1",
+		"date_start": "7 November 2016",
+		"date_end": "10 November 2016",
+		"is_round": "Yes"
+	}],
+	"often_offer_hari_outbound": [{
+		"often_offer_id": "1",
+		"m_hari_id": "1",
+		"date": "7 November 2016"
+	}],
+	"ofter_offer_hari_return": [{
+		"often_offer_id": "1",
+		"m_hari_id": "1",
+		"date": "7 November 2016"
+	}],
+	"page": [{
+		"nama": "Halaman 1",
+		"url": "halaman-1",
+		"isi": "isi halaman 1",
+		"created_at": "7 November 2016 13:37",
+		"updated_at": "7 November 2016 13:37",
+		"created_by": "7 November 2016 13:37",
+		"page_cat_id": "1"
+	}],
+	"page_cat": [{
+		"nama": "Kategori 1"
+	}],
+	"pickup_flexibility": [{
+		"ket": "ya"
+	}],
+	"posible_detour": [{
+		"ket": "keterangan"
+	}],
+	"stopovers": [{
+			"lat": "-2.428624",
+			"log": "25.114746",
+			"offer_id": "1"
+		}, {
+			"lat": "-2.428624",
+			"log": "24.114746",
+			"offer_id": "1"
+		}, {
+			"lat": "-2.428624",
+			"log": "23.114746",
+			"offer_id": "1"
+		}
+
+	],
+	"ukuran_barang_bawaan": [{
+		"nama": "Barang Tas",
+		"note": "3"
+	}],
+	"user": [{
+		"nama_depan": "Viqi",
+		"nama_tengah": "Firdaus",
+		"nama_balakang": "Sahara",
+		"tahun_lahir": "1995",
+		"last_login": "7 November 2016 11:59",
+		"is_deleted": "Yes",
+		"kode_telp_id": "1",
+		"no_telp": "857306207105",
+		"sms_key": "098765",
+		"is_telp_verified": "Yes",
+		"jenis_kelamin": "Laki-laki",
+		"alamat_lengkap": "Dsn Wates",
+		"m_kode_pos_id": "1",
+		"mini_bio": "Saya ada orang yang baik hati",
+		"photo": "https://lh6.googleusercontent.com/-JSqrUei7lZM/AAAAAAAAAAI/AAAAAAAAEA0/e5Dm0DDA5eA/photo.jpg"
+	}],
+	"user_bank_akun": [{
+		"id_default": "Yes",
+		"user_id": "1",
+		"bank_akun_id": "1",
+		"created_at": "7 November 2016 13:35",
+		"updated_at": "7 November 2016 13:35"
+	}],
+	"user_kendaraan": [{
+		"user_id": "1",
+		"kendaraan_id": "",
+		"created_at": "7 November 2016 12:20",
+		"updated_at": "7 November 2016 12:20"
+	}],
+	"user_preferensi": [{
+		"m_preferensi_id": "1",
+		"user_id": "1",
+		"nilai": "nilai"
+	}]
+}

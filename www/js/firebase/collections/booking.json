@@ -1,0 +1,16 @@
+{
+	"booking" : {
+		"booking_code" : ,
+		"offer_id" : ,
+		"seeker_id" :,
+		"created_at" :,
+		"status" : "Pending", // 'Pending' COMMENT 'Menunggu, Terima, Tolak, Batal oleh seeker, Batal oleh driver',
+		"stopovers_id" : "1",
+		"feedback" : "Belum ada feedback",
+		"rating": "6" // '1 - 6',
+		"feedback_date" : "7 November 2016 14:13",  
+		"seat_count" : "1",
+		"alasan_batal_id" : "1",
+		"is_bayar" : "Yes" //'Yes, No',
+	}
+}

@@ -1,0 +1,37 @@
+
+<ion-view view-title="Login">
+    <ion-content class="im-wrapper">
+        <div class="list">
+             <p>
+                 <i class="icon ion-social-snapchat-outline" style="font-size: 500%;"></i>
+             </p>
+        </div>
+        
+        <div class="list card padding">
+            <button ng-click="loginWithGoogle()" class="button button-full  button-assertive activated icon-left ion-social-google">Login with Google</button>
+            <button ng-click="loginWithFacebook()" class="button button-full  button-positive activated icon-left ion-social-facebook">Login with Facebook</button>
+            <!-- <button ng-click="loginWithTwitter()" class="button button-full  button-calm activated icon-left ion-social-twitter">Login with Twitter</button> -->
+        </div>
+
+        <form name="form_signup" ng-submit="doLogin(userLogin)" novalidate>
+            <div class="list card padding">
+                <label for="Email" class="item item-input">
+                    <!-- <span class="input-label">Email</span> -->
+                    <input type="email" ng-model="userLogin.user_email" id="user_email" placeholder="Email">
+                </label>
+                <label for="Password" class="item item-input">
+                    <!-- <span class="input-label">Password</span> -->
+                    <input type="password" ng-model="userLogin.user_pass" id="user_pass" placeholder="Password">
+                </label>
+                <button type="submit" class="button button-block button-positive activated">Login With Email</button>
+                <a ui-sref="app.reset" style="text-align: right; display: block;">Forgot Password</a>
+            </div>
+        </form>
+        <!--Register -->
+        <div class="list" style="text-align: center">
+            <button ui-sref="app.register" class="button button-small button-outline icon-left ion-person-add button-positive">
+                 Create New Account
+            </button>
+        </div>
+    </ion-content>
+</ion-view>

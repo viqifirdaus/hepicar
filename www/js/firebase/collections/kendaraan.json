@@ -1,0 +1,11 @@
+{
+	"kendaraan" :{
+		"kendaraan_model_id" : "1", //foreign key
+		"kenyamanan" : "Luxury", // ,'Basic, Normal, Comfortable, Luxury',
+		"jumlah_kursi" : "6",
+		"warna" : "merah",
+		"m_warna_id" : "1",
+		"kendaraan_tipe_id" : "1", //foreign key
+		"kendaraan_jenis_id" : "1"  // foreign key
+	}
+}

@@ -1,0 +1,25 @@
+{
+	"m_hari" : [
+		{
+			"nama" : "Senin",
+		},
+		{
+			"nama" : "Selasa",
+		},
+		{
+			"nama" : "Rabu",
+		},
+		{
+			"nama" : "Kamis",
+		},
+		{
+			"nama" : "Jum'at",
+		},
+		{
+			"nama" : "Sabtu",
+		},
+		{
+			"nama" : "Minggu",
+		}
+	]
+}

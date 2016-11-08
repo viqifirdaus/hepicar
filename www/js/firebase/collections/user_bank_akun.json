@@ -1,0 +1,9 @@
+{
+	"user_bank_akun" : {
+		"id_default" : "Yes",
+		"user_id" : "1",
+		"bank_akun_id" : "1",
+		"created_at" : "7 November 2016 13:35",
+		"updated_at" : "7 November 2016 13:35"
+	}
+}

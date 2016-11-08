@@ -1,0 +1,9 @@
+{
+	"message" : {
+		"pesan" : "Hallo",  
+		"created_at" : "7 November 2016 13:46",
+		"user_sender_id"  : "1", // foreign key
+		"user_receiver_id" : "1", // foreign key
+		"is_deleted" : "No"
+	}
+}

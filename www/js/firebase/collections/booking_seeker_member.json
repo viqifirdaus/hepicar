@@ -1,0 +1,8 @@
+{
+	"booking_seeker_member" : {
+		"nama" : "1111",
+		"usia" : "21",
+		"jenis_kelamin" : "Laki-laki",// 'Laki-laki, Peremepuan',
+		"booking_id" : "1" 
+	}
+}

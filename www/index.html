@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>HepiCar</title>
+    <link href="https://fonts.googleapis.com/css?family=RobotoDraft:400,500,700,400italic" rel="stylesheet">
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="lib/ionic-material/dist/ionic.material.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet">
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="lib/ionic-material/dist/ionic.material.min.js"></script>
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+    <script src="js/controllers/AppCtrl.js"></script>
+    <script src="js/controllers/InkCtrl.js"></script>
+    <script src="js/controllers/ComponentsCtrl.js"></script>
+    <script src="js/controllers/ListsCtrl.js"></script>
+    <script src="js/controllers/SetupCtrl.js"></script>
+    <script src="js/controllers/ExtensionsCtrl.js"></script>
+    <script src="js/controllers/MotionCtrl.js"></script>
+
+    <script src="js/controllers/YourRidesCtrl.js"></script>
+    <script src="js/controllers/FindARideCtrl.js"></script>
+    <script src="js/controllers/OfferARideCtrl.js"></script>
+    <script src="js/controllers/RatingsCtrl.js"></script>
+    <script src="js/controllers/InboxCtrl.js"></script>
+    <script src="js/controllers/HelpCtrl.js"></script>
+    <script src="js/controllers/ProfileCtrl.js"></script>
+    <script src="js/controllers/LoginCtrl.js"></script>
+    <script src="js/controllers/RegisterCtrl.js"></script>
+    <script src="js/controllers/ResetEmailCtrl.js"></script>
+    <script src="js/controllers/HariCtrl.js"></script>
+
+    <!-- services -->
+    <script src="js/services/utils.js"></script>
+    <script src="js/services/services.js"></script>
+    <script src="js/services/config.js"></script>
+
+    <!-- Login -->
+    <script src="js/controllers/RegisterCtrl.js"></script>
+    <script src="js/controllers/ResetEmailCtrl.js"></script>
+
+    <!-- angular fire -->
+    <script src="lib/angularfire/dist/angularfire.js"></script>
+
+
+    <!-- Firebase script -->
+    <!-- <script src="https://apis.google.com/js/platform.js" async defer></script> -->
+    <script src="https://www.gstatic.com/firebasejs/3.5.3/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      // var config = {
+      //   apiKey: "AIzaSyDTweTvv0nUvVsJl8NJn_3NgGHBanIT8mg",
+      //   authDomain: "carpool-d5ad9.firebaseapp.com",
+      //   databaseURL: "https://carpool-d5ad9.firebaseio.com",
+      //   storageBucket: "carpool-d5ad9.appspot.com",
+      //   messagingSenderId: "133163116401"
+      // };
+      // firebase.initializeApp(config);
+    </script>
+
+</head>
+<body ng-app="starter">
+    <!--<ion-pane>
+        <ion-header-bar class="bar-stable">
+            <h1 class="title">Ionic Blank Starter</h1>
+        </ion-header-bar>
+        <ion-content>
+        </ion-content>
+    </ion-pane>-->
+    <ion-nav-view></ion-nav-view>
+    <div id="modal" class=""></div>
+</body>
+</html>

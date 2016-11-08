@@ -1,0 +1,23 @@
+{
+	"user" : {
+		"nama_depan" : "Viqi",
+		"nama_tengah" : "Firdaus",
+		"nama_balakang" : "Sahara",
+		// "email" : "viqifirdaus@gmail.com",
+		// "password" "password",
+		"tahun_lahir" : "1995",
+		"last_login" : "7 November 2016 11:59",
+		"is_deleted" : "Yes",
+		// "email_key" : "12121212121",
+		// "is_email_verified" : "Yes" ,
+		"kode_telp_id" : "1", // foreign key
+		"no_telp" : "857306207105",
+		"sms_key" : "098765",
+		"is_telp_verified" : "Yes",
+		"jenis_kelamin" : "Laki-laki",
+		"alamat_lengkap" : "Dsn Wates",
+		"m_kode_pos_id" : "1", // foreign key
+		"mini_bio" : "Saya ada orang yang baik hati" ,
+		"photo" : "https://lh6.googleusercontent.com/-JSqrUei7lZM/AAAAAAAAAAI/AAAAAAAAEA0/e5Dm0DDA5eA/photo.jpg"
+	}
+}

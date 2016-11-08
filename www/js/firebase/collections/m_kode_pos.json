@@ -1,0 +1,6 @@
+{
+	"m_kode_pos" : {
+		"kode" : "6112",
+		"kecamatan_id" : "1" // foreign key
+	}
+}
