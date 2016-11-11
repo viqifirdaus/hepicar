@@ -133,25 +133,25 @@ app.config(function ($stateProvider, $urlRouterProvider) {
 
     //# tab menu di dalam menu inbox
     // Menu Inbox - tab-messages
-    // .state('app.messages', {
-    //     url: '/messages',
-    //     views: {
-    //         'tab-messages' : {
-    //             templateUrl: 'templates/inbox/tab-messages.html'
-    //         }
-    //     }
-    // })
+    .state('app.messages', {
+        url: '/inbox/messages',
+        views: {
+            'tab-messages' : {
+                templateUrl: 'templates/inbox/tab-messages.html'
+            }
+        }
+    })
 
 
-    // // Menu Inbox - tab-notifications
-    // .state('app.notifications', {
-    //     url: '/notifications',
-    //     views: {
-    //         'tab-notifications' : {
-    //             templateUrl: 'templates/inbox/tab-notifications.html'
-    //         }
-    //     }
-    // })
+    // Menu Inbox - tab-notifications
+    .state('app.notifications', {
+        url: '/inbox/notifications',
+        views: {
+            'tab-notifications' : {
+                templateUrl: 'templates/inbox/tab-notifications.html'
+            }
+        }
+    })
 
 
     // Menu Help
@@ -161,6 +161,17 @@ app.config(function ($stateProvider, $urlRouterProvider) {
             'menuContent' : {
                 templateUrl: 'templates/help/help.html',
                 controller: 'HelpCtrl'
+            }
+        }
+    })
+
+    // Menu Help
+    .state('app.help-content', {
+        url: '/help/help-content',
+        views: {
+            'menuContent' : {
+                templateUrl: 'templates/help/help-content.html',
+                controller: 'HelpContentCtrl'
             }
         }
     })
