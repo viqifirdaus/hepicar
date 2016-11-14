@@ -189,25 +189,113 @@ app.config(function ($stateProvider, $urlRouterProvider) {
 
     // didalam menu profile
     // Menu Profile - tab-about
-    // .state('app.about', {
-    //     url: '/about',
-    //     views: {
-    //         'tab-about' : {
-    //             templateUrl: 'templates/profile/tab-about.html'
-    //         }
-    //     }
-    // })
+    .state('app.about-you', {
+        url: '/profile/about-you',
+        views: {
+            'menuContent' : {
+                templateUrl: 'templates/profile/about.html',
+                controller: 'ProfileAboutCtrl'
+            }
+        }
+    })
+
+    .state('app.about-you-verifyid', {
+        url: '/profile/about-you/verifyid',
+        views: {
+            'menuContent' : {
+                templateUrl: 'templates/profile/verifyid.html',
+                controller: 'ProfileAboutVerifyIdCtrl'
+            }
+        }
+    })
+
+    
+    .state('app.about-you-verifytelp', {
+        url: '/profile/about-you/verifytelp',
+        views: {
+            'menuContent' : {
+                templateUrl: 'templates/profile/verifytelp.html',
+                controller: 'ProfileAboutVerifyTelpCtrl'
+            }
+        }
+    })
+
+    
+    .state('app.about-you-verifyemail', {
+        url: '/profile/about-you/verifyemail',
+        views: {
+            'menuContent' : {
+                templateUrl: 'templates/profile/verifyemail.html',
+                controller: 'ProfileAboutVerifyEmailCtrl'
+            }
+        }
+    })
+
+    
+    .state('app.about-you-verifyagreement', {
+        url: '/profile/about-you/verifyagreement',
+        views: {
+            'menuContent' : {
+                templateUrl: 'templates/profile/verifyagreement.html',
+                controller: 'ProfileAboutVerifyAgreementCtrl'
+            }
+        }
+    })
+
+
+    .state('app.profile-public', {
+        url: '/profile/profile-public',
+        views: {
+            'menuContent' : {
+                templateUrl: 'templates/profile/profile-public.html',
+                controller: 'ProfilePublicCtrl'
+            }
+        }
+    })
+
+    .state('app.profile-edit', {
+        url: '/profile/profile-edit',
+        views: {
+            'menuContent' : {
+                templateUrl: 'templates/profile/profile-edit.html',
+                controller: 'ProfileEditCtrl'
+            }
+        }
+    })
+    
+
+    .state('app.preference', {
+        url: '/profile/preference',
+        views: {
+            'menuContent' : {
+                templateUrl: 'templates/profile/preference.html',
+                controller: 'ProfilePreferenceCtrl'
+            }
+        }
+    })
+
+    .state('app.car', {
+        url: '/profile/car',
+        views: {
+            'menuContent' : {
+                templateUrl: 'templates/profile/car.html',
+                controller: 'ProfileCarCtrl'
+            }
+        }
+    })
+
 
 
     // // Menu Profile - tab-account
-    // .state('app.account', {
-    //     url: '/account',
-    //     views: {
-    //         'tab-account' : {
-    //             templateUrl: 'templates/profile/tab-account.html'
-    //         }
-    //     }
-    // })
+    .state('app.account', {
+        url: '/profile/account',
+        views: {
+            'menuContent' : {
+                templateUrl: 'templates/profile/account.html',
+                controller: 'ProfileAccountCtrl'
+            }
+        }
+    })
 
 
 
@@ -312,6 +400,6 @@ app.config(function ($stateProvider, $urlRouterProvider) {
 
     // if none of the above states are matched, use this as the fallback
     // $urlRouterProvider.otherwise('/app/components');
-    $urlRouterProvider.otherwise('/app/login');
+    $urlRouterProvider.otherwise('/app/profile/about-you');
 });
 
