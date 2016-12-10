@@ -49,7 +49,7 @@ app.controller('ProfilePublicCtrl', function ($scope, $stateParams, ionicMateria
             template: '<div style:"color:white">Saya juga suka dengan binatang</div>'
         });
 
-        // For example's sake, hide the sheet after 2 seconds
+        // For example's sake, hide the sheet= after 2 seconds
         $timeout(function() {
             $ionicLoading.hide();
         }, 2000);

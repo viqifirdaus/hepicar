@@ -221,5 +221,18 @@
 		"m_preferensi_id": "1",
 		"user_id": "1",
 		"nilai": "nilai"
+	}],
+	"faq": [{
+		"pertanyaaan": "What is HepiCar",
+		"jawaban": "BlaBlaCar is the leading carpooling platform in Europe: we connect people who need to travel with drivers who have empty seats. We have more than 35 million members across the world and the UK and more than 12 million people share a ride on BlaBlaCar every quarter on our website and mobile apps. By sharing long distance rides, our community is increasing the efficiency of road transport, saving money on travel and reducing our impact on the environment. It’s an all-round good thing!"
+	}, {
+		"pertanyaaan": "What is carpooling?",
+		"jawaban": "Carpooling, as the name implies, is when several people travel in a car together and share the cost of the ride. You have certainly already shared a ride with family and friends: every time you drive together, you share the cost of a trip with them. In much the same way, BlaBlaCar connects people who need to travel with drivers who have empty seats, so that they can share a long distance trip together, and all save money!"
+	}, {
+		"pertanyaaan": "What’s in it for me?",
+		"jawaban": "For passengers, carpooling is an affordable and convenient travel option. For example, on a ride from London to Manchester, the price per passenger will only be about £18. For drivers, carpooling helps offset the high cost of owning a vehicle (the average car costs its owner around £5,000 per year in insurance, MOT, road tax, fuel etc.) <br> <br> Of course, aside from the purely economic aspect, sharing a car is also environmentally friendly. Instead of using a car as an individual mode of transport, sharing it with others allows you to take advantage of any excess capacity efficiently and reduce the environmental impact of your journey."
+	},{
+		"pertanyaaan": "How to find a ride?",
+		"jawaban": "To find a ride, all you need to do is go to the home page and use our search engine to enter your city of <br> departure, your city of arrival and the date of your departure. <br> All the available rides offered by BlaBlaCar drivers are automatically displayed for you. <br> To avoid any misspellings, it is recommended that you select the town or city from the list of suggested results. If you do not specify the date of your ride, then you will find all of the rides that are offered on this route."
 	}]
 }

@@ -103,6 +103,41 @@ app.config(function ($stateProvider, $urlRouterProvider) {
             }
         }
     })
+    
+
+    // Menu Find A ride Detail
+    .state('app.find-a-ride-search-result-detail', {
+        url: '/find-a-ride/search-result/detail',
+        views: {
+            'menuContent' : {
+                templateUrl: 'templates/find-a-ride/search-result-detail.html',
+                controller: 'FindARideSearchResultDetailCtrl'
+            }
+        }
+    })
+
+    // Menu Find A ride Detail
+    .state('app.public-questions', {
+        url: '/find-a-ride/search-result/detail/public-questions',
+        views: {
+            'menuContent' : {
+                templateUrl: 'templates/find-a-ride/public-questions.html',
+                controller: 'FindARidePublicQuestionsCtrl'
+            }
+        }
+    })
+
+    
+    // Menu Find A ride Detail
+    .state('app.map-detail', {
+        url: '/find-a-ride/search-result/detail/map-detail',
+        views: {
+            'menuContent' : {
+                templateUrl: 'templates/find-a-ride/map-detail.html',
+                controller: 'FindARideMapDetailCtrl'
+            }
+        }
+    })
 
 
     // Menu Offer a Ride
@@ -221,6 +256,18 @@ app.config(function ($stateProvider, $urlRouterProvider) {
         }
     })
 
+    
+    // Menu Help - faq
+    // di HelpCtrl
+    .state('app.help-faq', {
+        url: '/help/help-faq',
+        views: {
+            'menuContent' : {
+                templateUrl: 'templates/help/help-faq.html',
+                controller: 'HelpFAQCtrl'
+            }
+        }
+    })
 
     
     // Menu Help
@@ -350,6 +397,17 @@ app.config(function ($stateProvider, $urlRouterProvider) {
             }
         }
     })
+    
+    .state('app.profile-ratings', {
+        url: '/profile/profile-ratings',
+        views: {
+            'menuContent' : {
+                templateUrl: 'templates/profile/profile-ratings.html',
+                controller: 'ProfileRatingsCtrl'
+            }
+        }
+    })
+    
 
     .state('app.profile-edit', {
         url: '/profile/profile-edit',
@@ -521,6 +579,6 @@ app.config(function ($stateProvider, $urlRouterProvider) {
 
     // if none of the above states are matched, use this as the fallback
     // $urlRouterProvider.otherwise('/app/components');
-    $urlRouterProvider.otherwise('/app/profile/account');
+    $urlRouterProvider.otherwise('/app/find-a-ride/search-result/detail');
 });
 

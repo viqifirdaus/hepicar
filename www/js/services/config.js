@@ -41,5 +41,6 @@ app.constant("REFERENCE", {
   "USER": 'user',
   "USER_BANK_AKUN": 'user_bank_akun',
   "USER_KENDARAAN": 'user_kendaraan',
-  "USER_PREFERENSI": 'user_preferensi'
+  "USER_PREFERENSI": 'user_preferensi',
+  "FAQ": 'faq'
 });

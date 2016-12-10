@@ -1,0 +1,12 @@
+
+<ion-view view-title="FAQ">
+    <ion-content class="im-wrapper">
+        <div class="list list-inset" ng-repeat="faq in faqs" >
+          <code>{{faq.key | json}}</code>
+          <div class="item item-icon-right" ng-click="showPopup(0)">
+            {{faq.pertanyaan}}
+            <!--<i class="icon ion-chevron-right"></i>-->
+          </div>
+    </div>  
+    </ion-content>
+</ion-view>
