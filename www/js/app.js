@@ -61,24 +61,22 @@ app.config(function ($stateProvider, $urlRouterProvider) {
         }
     })
 
-    //# untuk tab di dalam Menu Your rides
-    // Menu Your rides - tab-current
-    // .state('app.tab-history', {
-    //     url: '/tab-current',
-    //     views: {
-    //         'tab-current' : {
-    //             templateUrl: 'templates/your-rides/tab-current.html'
-    //         }
-    //     }
-    // })
-
-
-    //Menu Your rides - tab-history
-    .state('app.tab-history', {
-        url: '/tab-history',
+    .state('app.your-rides-current', {
+        url: '/your-rides/current',
         views: {
-            'tab-history' : {
-                templateUrl: 'templates/your-rides/tab-history.html'
+            'menuContent' : {
+                templateUrl: 'templates/your-rides/current.html',
+                controller: 'YourRidesCurrentCtrl'
+            }
+        }
+    })
+
+    .state('app.your-rides-history', {
+        url: '/your-rides/history',
+        views: {
+            'menuContent' : {
+                templateUrl: 'templates/your-rides/history.html',
+                controller: 'YourRidesHistoryCtrl'
             }
         }
     })
@@ -95,6 +93,17 @@ app.config(function ($stateProvider, $urlRouterProvider) {
         }
     })
 
+    // Menu Find A ride
+    .state('app.find-a-ride-search-result', {
+        url: '/find-a-ride/search-result',
+        views: {
+            'menuContent' : {
+                templateUrl: 'templates/find-a-ride/search-result.html',
+                controller: 'FindARideSearchResultCtrl'
+            }
+        }
+    })
+
 
     // Menu Offer a Ride
     .state('app.offer-a-ride', {
@@ -106,6 +115,42 @@ app.config(function ($stateProvider, $urlRouterProvider) {
             }
         }
     })
+
+    
+    // Menu Offer a Ride
+    .state('app.offer-justonce', {
+        url: '/offer-justonce',
+        views: {
+            'menuContent' : {
+                templateUrl: 'templates/offer-a-ride/offerjustonce.html',
+                controller: 'OfferJustOnceCtrl'
+            }
+        }
+    })
+
+    
+    // Menu Offer a Ride
+    .state('app.offer-justonce-step2', {
+        url: '/offer-justonce-step2',
+        views: {
+            'menuContent' : {
+                templateUrl: 'templates/offer-a-ride/offerjustoncestep2.html',
+                controller: 'OfferJustOnceStep2Ctrl'
+            }
+        }
+    })
+    
+    // Menu Offer a Ride
+    .state('app.offer-often', {
+        url: '/offer-often',
+        views: {
+            'menuContent' : {
+                templateUrl: 'templates/offer-a-ride/offeroften.html',
+                controller: 'OfferOftenCtrl'
+            }
+        }
+    })
+
 
     // Menu Ratings
     .state('app.ratings', {
@@ -175,6 +220,59 @@ app.config(function ($stateProvider, $urlRouterProvider) {
             }
         }
     })
+
+
+    
+    // Menu Help
+    .state('app.help-term-and-conditions', {
+        url: '/help/help-term-and-conditions',
+        views: {
+            'menuContent' : {
+                templateUrl: 'templates/help/help-term-and-conditions.html',
+                controller: 'HelpTermAndConditionsCtrl'
+            }
+        }
+    })
+
+    
+    
+    // Menu Help
+    .state('app.help-privacy', {
+        url: '/help/help-privacy',
+        views: {
+            'menuContent' : {
+                templateUrl: 'templates/help/help-privacy.html',
+                controller: 'HelpPrivacyCtrl'
+            }
+        }
+    })
+
+    
+    
+    // Menu Help
+    .state('app.help-licenses', {
+        url: '/help/help-licenses',
+        views: {
+            'menuContent' : {
+                templateUrl: 'templates/help/help-licenses.html',
+                controller: 'HelpLicensesCtrl'
+            }
+        }
+    })
+
+    
+    
+    // Menu Help
+    .state('app.logout', {
+        url: '/logout',
+        views: {
+            'menuContent' : {
+                // templateUrl: 'templates/help/help-term-and-conditions.html',
+                controller: 'LogoutCtrl'
+            }
+        }
+    })
+
 
     // Menu Profile
     .state('app.profile', {
@@ -298,6 +396,29 @@ app.config(function ($stateProvider, $urlRouterProvider) {
     })
 
 
+    
+    .state('app.account-notifications', {
+        url: '/profile/account-notications',
+        views: {
+            'menuContent' : {
+                templateUrl: 'templates/profile/account-notifications.html',
+                controller: 'ProfileAccountNotificationsCtrl'
+            }
+        }
+    })
+
+    
+    
+    .state('app.account-changepassword', {
+        url: '/profile/account-changepassword',
+        views: {
+            'menuContent' : {
+                templateUrl: 'templates/profile/account-changepassword.html',
+                controller: 'ProfileAccountChangePasswordCtrl'
+            }
+        }
+    })
+
 
 
     // Menu Login
@@ -400,6 +521,6 @@ app.config(function ($stateProvider, $urlRouterProvider) {
 
     // if none of the above states are matched, use this as the fallback
     // $urlRouterProvider.otherwise('/app/components');
-    $urlRouterProvider.otherwise('/app/profile/about-you');
+    $urlRouterProvider.otherwise('/app/profile/account');
 });
 

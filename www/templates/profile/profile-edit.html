@@ -1,94 +1,76 @@
 <ion-view view-title="Edit Profile">
    <ion-content class="im-wrapper">
       <div class="list">
-         <a class="item item-avatar" href="#">
+         <a class="item item-avatar" ui-sref="app.profile-photo-upload">
             <img src="img/arya.jpg">
-            <h2>Viqi Firdaus</h2>
-            <p>Experience : New Comer</p>
+            <button ui-sref="app.profile-photo-upload" class="button button-small button-outline button-positive">
+                Choose a profile photo
+            </button>
          </a>
-         <!--Jika belum di isi-->
-         <div class="card">
-            <a class="item item-icon-left" href="#">
-               <i class="icon ion-star"></i>
-               <h2> Edit your profile to ad a mini bio</h2>
-               <p>Tell other members about yourself and why they should want to travel with you.</p>
-            </a>
-         </div>
-         <!--Jika sudah diisi-->
-         <!--??-->
-         <div class="row">
-            <a class="col col-50" href="#">
-               <div  style="text-align: center">Edit Profile</div>
-            </a>
-            <a class="col col-50" href="#" >
-               <div style="text-align: center">See Public Profile</div>
-            </a>
-         </div>
       </div>
       <div class="list">
-         <a class="item item-icon-left" href="#">
-            <i class="icon ion-card"></i>
-            ID not Verified
-         </a>
-        <a href="" class="padding">
-            <button class="button button-small button-energized">
-                <i class="icon ion-alert"></i>
-                Pleasee verifiy your ID
-            </button>
-        </a>
-         <a class="item item-icon-left item-icon-right" href="#">
-            <i class="icon ion-iphone"></i>
-            +62 85730627015
-            <i class="icon ion-android-checkmark-circle"></i>
-         </a>
-         <a class="item item-icon-left item-icon-right" href="#">
-            <i class="icon ion-email"></i>
-            viqifirdaus@gmail.com
-            <i class="icon ion-android-checkmark-circle"></i>
-         </a>
-         <a class="item item-icon-left  item-icon-right" href="#">
-            <i class="icon ion-document-text"></i>
-            Agreement Accepted
-            <i class="icon ion-android-checkmark-circle"></i>
-         </a>
+          <h4>About You</h4>
+           <form name="form_editing_profile" ng-submit="saveProfile(user)" novalidate>
+            <div class="list card padding">
+                <label for="Gender" class="item item-input item-select">
+                    <div class="input-label">
+                    Gender
+                    </div>
+                    <select>
+                        <option selected>Male</option>
+                        <option>Female</option>
+                    </select>
+                </label>
+                <label for="First Name" class="item item-input">
+                     <span class="input-label">First Name</span> 
+                    <input type="text" ng-model="user.first_name" id="user_first_name" placeholder="First Name">
+                </label>
+                <label for="Last Name" class="item item-input">
+                     <span class="input-label">Last Name</span> 
+                    <input type="text" ng-model="user.last_name" id="user_last_name" placeholder="Last Name">
+                </label>
+                
+                <label for="Public Name" class="item item-input item-select">
+                    <div class="input-label">
+                    Public Name
+                    </div>
+                    <select>
+                        <option selected>Viqi</option>
+                        <option>Viqi Firdaus</option>
+                    </select>
+                </label>
+                
+                <label for="Tahun Lahir" class="item item-input item-select">
+                    <div class="input-label">
+                    Year of birth
+                    </div>
+                    <select>
+                        <option selected>1995</option>
+                        <option>1996</option>
+                        <option>1997</option>
+                        <option>1998</option>
+                        <option>1999</option>
+                        <option>2000</option>
+                        <option>2001</option>
+                        <option>2002</option>
+                        <option>2003</option>
+                        <option>2004</option>
+                        <option>2005</option>
+                    </select>
+                </label>
+
+                
+                <label for="Mini Bio" class="item item-input">
+                    <span class="input-label">Mini Bio</span> 
+                    <ion-textarea></ion-textarea>
+                     <textarea name="mini_bio" id="user_mini_bio" 
+                            ng-model="user.mini_bio" style="min-height: 100px; max-height: 100%" 
+                            placeholder="Add your mini bio and increase you chancces of quickly finding the perfect rideshare">
+                    </textarea>
+                </label>
+                <button type="submit" class="button button-block button-positive activated">Save Profile</button>
+            </div>
+        </form>
       </div>
-    <div class="list" style="text-align: center">
-        <button ui-sref="app.register" class="button button-small button-outline icon-left ion-edit button-positive">
-            Edit Profile
-        </button>
-    </div>
-
-    <div class="item item-divider">
-        <h4>PREFERENCES</h4>
-    </div>
-    <div class="row">
-        <div class="row">
-            <div class="col icon-left"></div>
-            <div class="col icon-left ion-chatbubbles"></div>
-            <div class="col icon-left ion-no-smoking"></div>
-            <div class="col icon-left ion-ios-paw"></div>
-            <div class="col icon-left ion-ios-musical-notes"></div>
-        </div>
-    </div>
-    <div class="list" style="text-align: center">
-        <button ui-sref="app.profile-preference" class="button button-small button-outline icon-left ion-ios-cog-outline button-positive">
-            Edit Preference
-        </button>
-    </div>
-
-
-    
-    <div class="item item-divider">
-        <h4>CAR DETAILS</h4>
-    </div>
-    <div class="card">
-        <p>Anda belum memasukkan mobil yang di miliki</p>
-    </div>
-    <div class="list" style="text-align: center">
-        <button ui-sref="app.profile-car" class="button button-small button-outline icon-left ion-model-s button-positive">
-            Add a car
-        </button>
-    </div>
-
    </ion-content>
 </ion-view>

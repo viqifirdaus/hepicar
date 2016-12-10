@@ -1,41 +1,45 @@
 
 <ion-view view-title="Profile Account">
     <ion-content class="im-wrapper">
-        <div class="card">
-            <div class="item item-text-wrap icon-left energized">
-                <i class="ion-alert"></i>
-                Our Community is build on trust. Ratings help you choose trustworrty rideshares to travel with
-            </div>
-        </div>
-        
         <div class="list">
+            <h4>PREFERENCES</h4>
+            <a class="item item-icon-left" ui-sref="app.account-notifications">
+                <i class="icon ion-android-notifications"></i>
+                Notifications
+            </a>
 
-            <div class="item item-divider">
-                <h4>Leave a rating</h4>
-            </div>
+            <a class="item item-icon-left" ui-sref="app.account-changepassword">
+                <i class="icon ion-locked"></i>
+                Change Password
+            </a>
 
-            <form name="form_signup" ng-submit="doCari(phone)" novalidate>
-                <div class="item item-text-wrap">
-                    Find a member by phone number
-                </div>
-                <div class="list ">
-                    <label for="phone" class="item item-input">
-                        <!-- <span class="input-label">Email</span> -->
-                        <input type="text" ng-model="phone" id="phone" placeholder="Enter Phone Number">
-                    </label>
-                    <button type="submit" class="button button-block button-stable activated">Find</button>
-                </div>
-            </form>
+
+            <h4>ABOUT</h4>
+            <a class="item item-icon-left" ui-sref="app.help">
+                <i class="icon ion-help-circled"></i>
+                Help
+            </a>
+
+            <a class="item item-icon-left" ui-sref="app.help-term-and-conditions">
+                <i class="icon ion-document-text"></i>
+                Terms & Conditions
+            </a>
             
-            <div class="item item-divider">
-                <h4>Past Ratings</h4>
-            </div>
+            <a class="item item-icon-left" ui-sref="app.help-privacy">
+                <i class="icon ion-ios-paper-outline"></i>
+                Privacy Policy
+            </a>
+            
+            <a class="item item-icon-left" ui-sref="app.help-licenses">
+                <i class="icon ion-ios-paper-outline"></i>
+                Licenses
+            </a>
+            
+            <a class="item item-icon-left" ui-sref="app.logout">
+                <i class="icon ion-log-out"></i>
+                Logout
+            </a>
 
-            <div class="card">
-                 <div class="item item-text-wrap">
-                    See the ratings you have left.
-                </div>
-            </div>
         </div>
     </ion-content>
 </ion-view>

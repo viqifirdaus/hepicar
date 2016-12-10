@@ -2,8 +2,9 @@
 app.controller('LoginCtrl', LoginCtrl);
 // app.controller('RegisterCtrl', RegisterCtrl);
 // app.controller('ResetEmailCtrl', ResetEmailCtrl);
+app.controller('LogoutCtrl', LogoutCtrl);
 
-function LoginCtrl($scope, $stateParams, ionicMaterialInk, $state, $firebaseArray, $document, CONFIG, $location, $state, $location) {
+function LoginCtrl($scope, $stateParams, ionicMaterialInk, $state, $firebaseArray, $document, CONFIG, $location, $location) {
     ionicMaterialInk.displayEffect();
 
 
@@ -155,4 +156,14 @@ function LoginCtrl($scope, $stateParams, ionicMaterialInk, $state, $firebaseArra
   	}
 
 }
-LoginCtrl.$inject = ['$scope', '$stateParams', 'ionicMaterialInk', '$state', '$firebaseArray', '$document', 'CONFIG', '$location', '$state', '$location'];	
+LoginCtrl.$inject = ['$scope', '$stateParams', 'ionicMaterialInk', '$state', '$firebaseArray', '$document', 'CONFIG', '$location', '$location'];	
+
+
+
+function LogoutCtrl($scope, $stateParams, ionicMaterialInk, $state, $firebaseArray, $document, CONFIG, $location, $location) {
+    ionicMaterialInk.displayEffect();
+
+
+}
+LogoutCtrl.$inject = ['$scope', '$stateParams', 'ionicMaterialInk', '$state', '$firebaseArray', '$document', 'CONFIG', '$location', '$location'];	
+

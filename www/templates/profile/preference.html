@@ -1,5 +1,48 @@
-<ion-view view-title="Preference">
+<ion-view view-title="Edit Preference">
    <ion-content class="im-wrapper">
+    <div class="list">
+        <form name="form_editing_profile" ng-submit="savePreferences(user)" novalidate>
+            <h4>CHATTINESS</h4>
+            <div class="item item-icon-left" href="#">
+                <i class="icon ion-chatbubbles"></i>
+                <select class="item item-input item-select">
+                    <option selected>I talk depending on my mood</option>
+                    <option>I'm the quiet type</option>
+                    <option>I love the chat!</option>
+                </select>
+            </div>
 
+            <h4>SMOKING</h4>
+            <div class="item item-icon-left" href="#">
+                <i class="icon ion-no-smoking"></i>
+                <select class="item item-input item-select">
+                    <option selected>Smoking is OK sometimes</option>
+                    <option>No smoking please</option>
+                    <option>Smoking doesn't bother me</option>
+                </select>
+            </div>
+
+            <h4>PETS</h4>
+            <div class="item item-icon-left" href="#">
+                <i class="icon ion-ios-paw"></i>
+                <select class="item item-input item-select">
+                    <option selected>No pets please</option>
+                    <option>Depends on the animal</option>
+                    <option>Pets welcome. Woof</option>
+                </select>
+            </div>
+
+            <h4>MUSIC</h4>
+            <div class="item item-icon-left" href="#">
+                <i class="icon ion-ios-musical-notes"></i>
+                <select class="item item-input item-select">
+                    <option selected>Silence is golden</option>
+                    <option>I listen to music if I fancy it</option>
+                    <option>It's all about the playlist</option>
+                </select>
+            </div>
+            <button type="submit" class="button button-block button-positive activated">Save Preferences</button>
+        </form>
+      </div>
    </ion-content>
 </ion-view>
