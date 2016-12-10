@@ -1,0 +1,8 @@
+{
+	"user_kendaraan" : {
+		"user_id" : "1", // foreign key
+		"kendaraan_id" : "", // foreign key
+		"created_at" : "7 November 2016 12:20", //,
+		"updated_at" : "7 November 2016 12:20"	
+	}
+}

@@ -1,0 +1,36 @@
+
+<ion-view view-title="Setting Notifications">
+    <ion-content class="im-wrapper">
+        <div class="list">
+            
+           <form name="form_add_car" ng-submit="saveNotifications(notif)" novalidate>
+                <h4>PUSH NOTIFICATIONS</h4>
+                <span>Get push notifications about : </span>
+                
+                <ion-checkbox ng-model="notif.push.bookings">Bookings</ion-checkbox>
+                <ion-checkbox ng-model="notif.push.othermember">Messages received form other members</ion-checkbox>
+                <ion-checkbox ng-model="notif.push.ratings">Ratings</ion-checkbox>
+
+
+                <h4>SMS</h4>
+                <span>Get an SMS to +62 85730627015 when : </span>
+                
+                <ion-checkbox ng-model="notif.sms.privatemessage">You Receive a private message</ion-checkbox>
+                <span>(Free Service, only one SMS per passenger)</span>
+
+                <h4>EMAILS</h4>
+                <span>Get an email at viqifirdaus@gmail.com when : </span>
+                
+                <ion-checkbox ng-model="notif.email.publishride">You publish a ride offer</ion-checkbox>
+                <ion-checkbox ng-model="notif.email.rideoffer">You update your ride offer</ion-checkbox>
+                <ion-checkbox ng-model="notif.email.privatemessage">You receive a private message</ion-checkbox>
+                <ion-checkbox ng-model="notif.email.leaverating">You have a rating to leave</ion-checkbox>
+                <ion-checkbox ng-model="notif.email.receiverating">You receive a rating</ion-checkbox>
+                <ion-checkbox ng-model="notif.email.info">You have useful information for you </ion-checkbox>
+
+                <button type="submit" class="button button-block button-positive activated">Save Notification Settings</button>
+
+            <form>
+        </div>
+    </ion-content>
+</ion-view>

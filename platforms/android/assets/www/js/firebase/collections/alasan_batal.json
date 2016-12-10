@@ -1,0 +1,13 @@
+{
+	"alasan_batal" : [
+		{
+			"nama" : "Alasan ke 1"
+		},
+		{
+			"nama" : "Alasan ke 2"
+		},
+		{
+			"nama" : "Alasan ke 3"
+		}
+	]
+}

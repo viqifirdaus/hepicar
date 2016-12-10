@@ -1,0 +1,13 @@
+{
+	"bank_nama" : [
+		{
+			"nama" : "Bank Mandiri"
+		},
+		{
+			"nama" : "Bank BRI"
+		},
+		{
+			"nama" : "Bank BCA"
+		}
+	]
+}

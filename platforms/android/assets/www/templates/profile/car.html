@@ -1,0 +1,153 @@
+<ion-view view-title="Car Detail">
+   <ion-content class="im-wrapper">
+      <div class="list">
+         <a class="item item-avatar" ui-sref="app.profile-photo-upload">
+            <img src="img/arya.jpg">
+         </a>
+      </div>
+      <div class="list">
+           <form name="form_add_car" ng-submit="saveProfile(user)" novalidate>
+            <div class="list card padding">
+                <label for="Make" class="item item-input item-stacked-label">
+                    <div class="input-label">
+                    Make
+                    </div>
+                    <select class="item item-select">
+                        <option selected>A15</option>
+                        <option>ABARTH</option>
+                        <option>AC</option>
+                        <option>ACURA</option>
+                        <option>ALEKO</option>
+                        <option>ALFA ROMEO</option>
+                        <option>ALPINE RENAULT</option>
+                    </select>
+                </label>
+                <!-- Start Keluar setelah form make sudah di isi -->
+                <label for="Model" class="item item-input item-stacked-label">
+                    <div class="input-label">
+                    Model
+                    </div>
+                    <select class="item item-select">
+                        <option selected>Zuk</option>
+                        <option>500</option>
+                        <option>Grande Punto E Evo</option>
+                    </select>
+                </label>
+                <!-- End Keluar setelah form make sudah di isi -->
+                
+                <label for="Conform Level" class="item item-input item-stacked-label">
+                    <div class="input-label">
+                    Conform Level
+                    </div>
+                    <select class="item item-select">
+                        <option selected>Choose the confort level</option>
+                        <option>Basic</option>
+                        <option>Normal</option>
+                        <option>Confortable</option>
+                        <option>Luxury</option>
+                    </select>
+                </label>
+
+                
+                <label for="Total Number of Seats" class="item item-input item-stacked-label">
+                    <div class="input-label">
+                    Total Number of Seats
+                    </div>
+                    <select class="item item-select">
+                        <option selected>No. seats (driver included)</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                    </select>
+                </label>
+
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">Email</span>
+                    <select class="item item-select">
+                        <option selected>Choose a color</option>
+                        <option>Black</option>
+                        <option>Blue</option>
+                        <option>Dark Green</option>
+                        <option>Green</option>
+                        <option>Dark Blue</option>
+                        <option>Dark Grey</option>
+                        <option>Purple</option>
+                        <option>Brown</option>
+                        <option>Claret</option>
+                        <option>Light Green</option>
+                        <option>Light Blue</option>
+                        <option>Light Grey</option>
+                        <option>Mauve</option>
+                        <option>Red</option>
+                        <option>Pink</option>
+                        <option>Orange</option>
+                        <option>Yellow</option>
+                        <option>White</option>
+                        <option>Silver</option>
+                        <option>Gold</option>
+                        <option>Baige</option>
+                    </select>
+                </label>
+
+                <label for="Color" class="item item-input item-stacked-label">
+                    <div class="input-label">
+                        Color
+                    </div>
+                    <select class="item item-select">
+                        <option selected>Choose a color</option>
+                        <option>Black</option>
+                        <option>Blue</option>
+                        <option>Dark Green</option>
+                        <option>Green</option>
+                        <option>Dark Blue</option>
+                        <option>Dark Grey</option>
+                        <option>Purple</option>
+                        <option>Brown</option>
+                        <option>Claret</option>
+                        <option>Light Green</option>
+                        <option>Light Blue</option>
+                        <option>Light Grey</option>
+                        <option>Mauve</option>
+                        <option>Red</option>
+                        <option>Pink</option>
+                        <option>Orange</option>
+                        <option>Yellow</option>
+                        <option>White</option>
+                        <option>Silver</option>
+                        <option>Gold</option>
+                        <option>Baige</option>
+                    </select>
+                </label>
+
+                
+                <label for="Car Type" class="item item-input item-stacked-label">
+                    <div class="input-label">
+                        Car Type
+                    </div>
+                    <select class="item item-select">
+                        <option selected>Choose type of your car</option>
+                        <option>Saloon</option>
+                        <option>Hatchback</option>
+                        <option>Convertible</option>
+                        <option>Estate</option>
+                        <option>SUV</option>
+                        <option>Station Wagon</option>
+                        <option>Minivan</option>
+                        <option>Van</option>
+                        <option>Bike</option>
+                    </select>
+                </label>
+                
+                <button type="submit" class="button button-block button-positive activated">Save Car</button>
+            </div>
+        </form>
+      </div>
+   
+   </ion-content>
+</ion-view>

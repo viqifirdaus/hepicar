@@ -1,0 +1,6 @@
+{
+	"m_provinsi" : {
+		"nama" : "Jawa Timur",
+		"negara_id" : "1" // foreign key
+	}
+}

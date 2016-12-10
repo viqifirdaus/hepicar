@@ -1,0 +1,6 @@
+{
+	"m_kota" : {
+		"nama" : "Surabaya",
+		"provinsi_id" : "1" // foreign key
+	}
+}

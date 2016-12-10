@@ -1,0 +1,20 @@
+{
+	"offer" : {
+		"is_often" : "Sering", // Sering & Tidak sering
+		"pickup_lat" : "-2.428624",
+		"pickup_log" : "25.114746",
+		"dropoff_lat" : "-2.428624",
+		"dropoff_log" : "25.114746",
+		"date_time_travel" : "7 November 2016 13:45", 
+		"date_time_return" : "7 November 2016 13:45",
+		"user_id" : "1", // foreign key
+		"cost_per_pessenger" : "30000",
+		"seat_offer" : "offer",
+		"kendaraan_id" : "1", //foreign key
+		"offer_detail_pickup" : "offer offer_detail_pickup",
+		"offer_detail_return" : " offer offer_detail_return",
+		"ukuran_barang_bawaan_id" : "1", //foreign key
+		"pickup_flexibility_id" : "1", //foreign key
+		"posible_detour_id" : "1" //foreign key
+	}
+}

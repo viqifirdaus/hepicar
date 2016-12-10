@@ -1,0 +1,20 @@
+
+<ion-view view-title="Hari">
+    <ion-content class="im-wrapper">
+        <div class="bar bar-subheader bar-stable static text-center">
+            <strong class="title">Daftar Hari</strong>
+        </div>
+        <ul class="list">
+            <li ng-repeat="hari in haris" class="item" >
+                {{hari.key | json}}
+                <input ng-model="hari.nama" ng-change="updateHari(hari)" />
+                <!-- delete a message -->
+                <button ng-click="deleteHari(hari)">Delete Hari</button>
+            </li>
+        </ul>
+        <form ng-submit="createHari(hariBaru)">
+            <input ng-model="hariBaru.nama" />
+            <button type="submit">Add Hari</button>
+        </form>
+    </ion-content>
+</ion-view>

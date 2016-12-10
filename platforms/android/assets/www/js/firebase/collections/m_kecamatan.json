@@ -1,0 +1,6 @@
+{
+	"m_kecamatan" : {
+		"nama" : "Duduksampeyan",
+		"kota_id" : "1" // foreign key
+	}
+}

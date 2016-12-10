@@ -1,0 +1,76 @@
+<ion-view view-title="Edit Profile">
+   <ion-content class="im-wrapper">
+      <div class="list">
+         <a class="item item-avatar" ui-sref="app.profile-photo-upload">
+            <img src="img/arya.jpg">
+            <button ui-sref="app.profile-photo-upload" class="button button-small button-outline button-positive">
+                Choose a profile photo
+            </button>
+         </a>
+      </div>
+      <div class="list">
+          <h4>About You</h4>
+           <form name="form_editing_profile" ng-submit="saveProfile(user)" novalidate>
+            <div class="list card padding">
+                <label for="Gender" class="item item-input item-select">
+                    <div class="input-label">
+                    Gender
+                    </div>
+                    <select>
+                        <option selected>Male</option>
+                        <option>Female</option>
+                    </select>
+                </label>
+                <label for="First Name" class="item item-input">
+                     <span class="input-label">First Name</span> 
+                    <input type="text" ng-model="user.first_name" id="user_first_name" placeholder="First Name">
+                </label>
+                <label for="Last Name" class="item item-input">
+                     <span class="input-label">Last Name</span> 
+                    <input type="text" ng-model="user.last_name" id="user_last_name" placeholder="Last Name">
+                </label>
+                
+                <label for="Public Name" class="item item-input item-select">
+                    <div class="input-label">
+                    Public Name
+                    </div>
+                    <select>
+                        <option selected>Viqi</option>
+                        <option>Viqi Firdaus</option>
+                    </select>
+                </label>
+                
+                <label for="Tahun Lahir" class="item item-input item-select">
+                    <div class="input-label">
+                    Year of birth
+                    </div>
+                    <select>
+                        <option selected>1995</option>
+                        <option>1996</option>
+                        <option>1997</option>
+                        <option>1998</option>
+                        <option>1999</option>
+                        <option>2000</option>
+                        <option>2001</option>
+                        <option>2002</option>
+                        <option>2003</option>
+                        <option>2004</option>
+                        <option>2005</option>
+                    </select>
+                </label>
+
+                
+                <label for="Mini Bio" class="item item-input">
+                    <span class="input-label">Mini Bio</span> 
+                    <ion-textarea></ion-textarea>
+                     <textarea name="mini_bio" id="user_mini_bio" 
+                            ng-model="user.mini_bio" style="min-height: 100px; max-height: 100%" 
+                            placeholder="Add your mini bio and increase you chancces of quickly finding the perfect rideshare">
+                    </textarea>
+                </label>
+                <button type="submit" class="button button-block button-positive activated">Save Profile</button>
+            </div>
+        </form>
+      </div>
+   </ion-content>
+</ion-view>
