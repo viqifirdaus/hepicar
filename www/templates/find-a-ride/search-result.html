@@ -1,28 +1,28 @@
 
 <ion-view view-title="Find a ride">
     <ion-content class="im-wrapper">        
-        <h4><i class="icon ion-arrow-shrink"></i> Today</h4>
-        <div class="list card stable-bg">
+        <!-- <h4><i class="icon ion-arrow-shrink"></i> Today</h4> -->
+        <div class="list card stable-bg" ng-repeat="offer in offers" >
             <div class="item item-avatar">
                 <img src="img/arya.jpg">
-                <h2>Nicholas</h2>
-                <p>42 years old</p>
+                <h2>{{  offer.name }}</h2>
+                <p>{{ offer.age }} years old</p>
             </div>
             <div class="item item-body">
-                <a class="subdued"><b>04:00</b></a> Manchester
+                <a class="subdued"><b>{{ offer.date_time_travel | time }}</b></a> {{ offer.city_from }}
             </div>
             <div class="item item-body">
-                <a class="subdued"><b>11:00</b></a> Wembley
+                <a class="subdued"><b>{{ offer.date_time_return | time }}</b></a> {{ offer.city_to }}
             </div>
             <div class="item tabs tabs-secondary tabs-icon-left">
                 <a class="subdued">See details</a>
                 <a class="tab-item" data-ink-color="#336699" data-ink-opacity="0.5">
                 </a>
-                <a data-ink-color="#336699" data-ink-opacity="0.5"><strong>$55</strong></a>
+                <a data-ink-color="#336699" data-ink-opacity="0.5"><strong>Rp {{ offer.cost_per_pessenger }}</strong></a>
             </div>
         </div>
-        <h4><i class="icon ion-arrow-shrink"></i> Tomorrow</h4>
-        <div class="list card stable-bg">
+        <!-- <h4><i class="icon ion-arrow-shrink"></i> Tomorrow</h4> -->
+<!--         <div class="list card stable-bg">
             <div class="item item-avatar">
                 <img src="img/arya.jpg">
                 <h2>Richard</h2>
@@ -40,6 +40,6 @@
                 </a>
                 <a data-ink-color="#336699" data-ink-opacity="0.5"><strong>$55</strong></a>
             </div>
-        </div>
+        </div> -->
     </ion-content>
 </ion-view>

@@ -2,16 +2,16 @@
 <ion-view view-title="Offer a Ride - Just Once Step 2">
     <ion-content class="im-wrapper">
         <div>
-            <form name="form_offeraride_justonce" ng-submit="doOfferJustOnce(offer)" novalidate>
+            <form name="form_offeraride_justonce" ng-submit="doOfferJustOnce()" novalidate>
                 <h4>PRICE</h4>
                 <div class="item" href="#">
                     <label for="from and to"  class="item item-input ">
                         <div class="input-label">
-                        Jakart >> Surabaya<br>
+                        {{ offer.from }} >> {{ offer.to }}<br>
                         <span style="font-size: 9px; font-style: italic;" >Recommended price : Rp. 10000</span>
                         </div>
                         <!--<p>Recommended price : Rp. 10000</p>-->
-                        <input type="number" placeholder="Rp 10.000">
+                        <input ng-model="offer.price" type="number" placeholder="Rp 10.000">
                     </label>
                 </div>
                 <div class="item" href="#">
@@ -19,7 +19,7 @@
                         <div class="input-label">
                         Number of seats
                         </div>
-                        <input type="number" placeholder="3">
+                        <input ng-model="offer.seats" type="number" placeholder="3">
                     </label>
                 </div>
 
@@ -45,7 +45,7 @@
                         <div class="input-label">
                         Max luggage size
                         </div>
-                        <select>
+                        <select ng-model="offer.luggage_size">
                             <option selected>Small</option>
                             <option>Medium</option>
                             <option>Large</option>
@@ -58,7 +58,7 @@
                         <div class="input-label">
                         Pickup flexibility
                         </div>
-                        <select>
+                        <select ng-model="offer.pickup_flexibility">
                             <option selected>Right on time</option>
                             <option>In a 15 mins window</option>
                             <option>In a 30 mins window</option>
@@ -75,7 +75,7 @@
                         <div class="input-label">
                         Possible detour
                         </div>
-                        <select>
+                        <select ng-model="offer.possible_detour">
                             <option selected>None</option>
                             <option>15 minutes max</option>
                             <option>30 minutes max</option>
@@ -92,7 +92,7 @@
                 </ion-checkbox>
 
 
-                <button type="submit" class="button button-block button-positive">Publish</button>
+                <button ng-disabled="!offer.term" type="submit" class="button button-block button-positive">Publish</button>
                 <!--<button ui-sref="app.app.offer-justonce-step2" class="button button-block button-stable activated">Publ</button>-->
             <form>
         </div>
