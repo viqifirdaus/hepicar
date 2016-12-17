@@ -1,7 +1,33 @@
 var app = angular.module('services', ['firebase']);
 
 app.factory('Auth', Auth);
-app.service('Chats', Chats);
+app.service('Chats', Chats) 
+    .service('sharedProperties', function () {
+        var FormFindARide = { from: '', to: '', seat: 0 };
+        var FormOffer = { };
+
+        return {
+            getFormFindARide: function () {
+                return FormFindARide;
+            },
+            setFormFindARide: function(value) {
+                FormFindARide = value;
+            },
+            getFormAddOffer: function () {
+                return FormOffer;
+            },
+            setFormAddOffer: function(value) {
+                FormOffer = value;
+            }
+        };
+    })
+    .filter('time', function() {
+        return function(x) {
+            var dt = new Date(parseInt(x));
+            return ((dt.getHours() < 10) ? '0': '') + dt.getHours() 
+                + ":" + ((dt.getMinutes() < 10) ? '0': '') +dt.getMinutes();
+        };
+    });
 
 function Auth(rootRef, $firebaseAuth) {
 	return $firebaseAuth(rootRef);
