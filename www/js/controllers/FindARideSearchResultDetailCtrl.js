@@ -1,7 +1,9 @@
-app.controller('FindARideSearchResultDetailCtrl', function ($scope, $stateParams, ionicMaterialInk, $ionicPopup, $timeout) {
+app.controller('FindARideSearchResultDetailCtrl', function ($scope, $stateParams, ionicMaterialInk, $ionicPopup, $timeout, sharedProperties) {
     //ionic.material.ink.displayEffect();
     ionicMaterialInk.displayEffect();
 
+    $scope.offer = sharedProperties.getFormFindARide();
+    console.log($scope.offer);
 
     $scope.showRatings = function() {
         var alertPopup = $ionicPopup.alert({
@@ -14,8 +16,6 @@ app.controller('FindARideSearchResultDetailCtrl', function ($scope, $stateParams
             ionicMaterialInk.displayEffect();
         }, 0);
     };
-
-    
 
     $scope.openModal = function() {
         $scope.modal.show();

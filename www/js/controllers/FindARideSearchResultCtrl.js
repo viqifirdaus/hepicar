@@ -1,7 +1,7 @@
-app.controller('FindARideSearchResultCtrl', function ($scope, $stateParams, ionicMaterialInk, CONFIG, REFERENCE, $firebaseArray, sharedProperties) {
+app.controller('FindARideSearchResultCtrl', function ($scope, $state, $stateParams, ionicMaterialInk, CONFIG, REFERENCE, $firebaseArray, sharedProperties) {
     //ionic.material.ink.displayEffect();
     ionicMaterialInk.displayEffect();
-    var filterRide = sharedProperties.getFormFindARide()
+    var filterRide = sharedProperties.getFormFindARide();
     var database = firebase.database();
 
     // get list hari
@@ -9,9 +9,9 @@ app.controller('FindARideSearchResultCtrl', function ($scope, $stateParams, ioni
     var users = firebase.database().ref(REFERENCE.USER);
 
     console.log(filterRide);
+    $scope.offers = [];
 
     offers.orderByChild('city_from').equalTo(filterRide.from.toLowerCase()).on('value', function(snapshot) {
-    	$scope.offers = [];
     	var results = snapshot.val();
     	var i = 0;
 
@@ -29,8 +29,13 @@ app.controller('FindARideSearchResultCtrl', function ($scope, $stateParams, ioni
 				$scope.offers[i++] = results[key];
 			}
 		});
-		console.log(results);
     });
+    console.log($scope.offers);
+
+    $scope.clickDetailButton = function (offer) {
+        sharedProperties.setFormFindARide(offer);
+        $state.go('app.find-a-ride-search-result-detail');
+    }
 
     // offers.on('child_changed', function(data) {
     //     console.log(data);

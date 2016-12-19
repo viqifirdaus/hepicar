@@ -34,8 +34,7 @@ app.controller('OfferJustOnceStep2Ctrl', function ($scope, $state, $stateParams,
     }
 
     $scope.createOffer = function(offer) {
-        console.log(offer.travel_date + ' ' + offer.travel_time);
-        console.log(offer.return_date + ' ' + offer.return_time);
+        console.log(offer);
         var postData = {
             cost_per_pessenger : offer.price,
             date_time_travel : (new Date(offer.travel_date + ' ' + offer.travel_time)).valueOf(),
@@ -46,17 +45,16 @@ app.controller('OfferJustOnceStep2Ctrl', function ($scope, $state, $stateParams,
             kendaraan_id : 1,
             offer_detail_pickup : 'offer offer_detail_pickup',
             offer_detail_return :  'offer offer_detail_return',
-            pickup_flexibility_id : 1,
+            pickup_flexibility : offer.pickup_flexibility,
             pickup_lat : -2.428624,
             pickup_log : 25.114746,
             city_from : offer.from.toLowerCase(),
             city_to : offer.to.toLowerCase(),
-            posible_detour_id : 1,
+            posible_detour : offer.possible_detour,
             seat_offer : 'offer',
-            ukuran_barang_bawaan_id : 1,
+            ukuran_barang_bawaan : offer.luggage_size,
             user_id : 0
         };
-        console.log(postData);
 
         offerRef.child(utils.generateUID()).set(postData);
     }

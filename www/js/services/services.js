@@ -27,6 +27,13 @@ app.service('Chats', Chats)
             return ((dt.getHours() < 10) ? '0': '') + dt.getHours() 
                 + ":" + ((dt.getMinutes() < 10) ? '0': '') +dt.getMinutes();
         };
+    })
+    .filter('date', function() {
+        return function(x) {
+            var dt = new Date(parseInt(x));
+            return ((dt.getDate() < 10) ? '0': '') + dt.getDate() + ':'
+                + ((dt.getMonth() < 10) ? '0': '') + dt.getMonth() + '/' + dt.getFullYears();
+        };
     });
 
 function Auth(rootRef, $firebaseAuth) {
