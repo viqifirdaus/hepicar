@@ -18,7 +18,7 @@ app.service('Chats', Chats)
             },
             setFormAddOffer: function(value) {
                 FormOffer = value;
-            }
+            } 
         };
     })
     .filter('time', function() {

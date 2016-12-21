@@ -9,7 +9,7 @@ app.controller('FindARideSearchResultCtrl', function ($scope, $state, $statePara
     var users = firebase.database().ref(REFERENCE.USER);
 
     console.log(filterRide);
-    $scope.offers = [];
+    $scope.offers = []; 
 
     offers.orderByChild('city_from').equalTo(filterRide.from.toLowerCase()).on('value', function(snapshot) {
     	var results = snapshot.val();

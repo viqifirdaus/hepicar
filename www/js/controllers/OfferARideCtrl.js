@@ -14,7 +14,7 @@ app.controller('OfferJustOnceCtrl', function ($scope, $state, $stateParams, ioni
         $state.go('app.offer-justonce-step2');
         sharedProperties.setFormAddOffer($scope.offer);
     }
-});
+}); 
 
 
 app.controller('OfferJustOnceStep2Ctrl', function ($scope, $state, $stateParams, ionicMaterialInk, CONFIG, REFERENCE, $firebaseArray, sharedProperties, utils) {

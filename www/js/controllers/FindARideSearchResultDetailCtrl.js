@@ -3,7 +3,7 @@ app.controller('FindARideSearchResultDetailCtrl', function ($scope, $stateParams
     ionicMaterialInk.displayEffect();
 
     $scope.offer = sharedProperties.getFormFindARide();
-    console.log($scope.offer);
+    console.log($scope.offer); 
 
     $scope.showRatings = function() {
         var alertPopup = $ionicPopup.alert({
